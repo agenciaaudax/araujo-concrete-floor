@@ -78,7 +78,7 @@ const MainSection = styled.div`
   background-repeat: no-repeat;
 
   @media (max-width: 700px) {
-    height: 500px;
+    height: 550px;
     width: 375px;
     background-image: url(${cover});
     background-repeat: no-repeat;
@@ -138,8 +138,9 @@ const MainGeneralHolder = styled.div`
     justify-content: space-around;
     align-items: center;
     width: 375px;
-    height: 100px;
+    height: 25px;
     margin-top: 70px;
+    margin-bottom: 173px;
   }
 `;
 
@@ -219,7 +220,6 @@ const MainSectionText = styled.h1`
     line-height: 150%;
     text-align: center;
     color: rgba(255, 255, 255, 1);
-    margin-top: 100px;
   }
 `;
 
