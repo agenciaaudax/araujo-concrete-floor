@@ -3,6 +3,7 @@ import Logo from "../src/assets/images/Logo.png";
 import cover from "../src/assets/images/Mainsec.png";
 import brasao from "../src/assets/images/Icone.png";
 import telefone from "../src/assets/images/Tele.png";
+import Aboutimage from "../src/assets/images/AboutUs.png";
 
 const Header = styled.div`
   width: 1440px;
@@ -240,6 +241,63 @@ const MainSectionButton = styled.button`
   }
 `;
 
+const AboutUs = styled.div`
+  @media (max-width: 700px) {
+    width: 631px;
+    height: 532px;
+    background-image: url(${Aboutimage});
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 86px;
+  }
+`;
+
+const AboutUsTitle = styled.h2`
+  @media (max-width: 700px) {
+    width: 90px;
+    height: 24px;
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 120%;
+    text-transform: capitalize;
+    color: rgba(255, 255, 255, 1);
+    margin: 0px 143px 30px 143px;
+  }
+`;
+
+const AboutUsDescription = styled.p`
+  @media (max-width: 700px) {
+    width: 315px;
+    height: 242px;
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 160%;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    margin: 0px 30px 30px 30px;
+  }
+`;
+
+const AboutUsButton = styled.button`
+  @media (max-width: 700px) {
+    width: 180px;
+    height: 42px;
+    background: rgba(8, 99, 117, 1);
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 160%;
+    color: rgba(255, 255, 255, 1);
+    margin: 0px 98px 78px 98px;
+  }
+`;
+
 function App() {
   return (
     <div>
@@ -282,6 +340,21 @@ function App() {
 
         <MainSectionButton>REQUEST A QUOTE</MainSectionButton>
       </MainSection>
+
+      <AboutUs>
+        <AboutUsTitle>About Us</AboutUsTitle>
+        <AboutUsDescription>
+          Araujo Concrete Floor Inc. specializes in concrete floors - dry pack
+          (cement tile) and tile. In 2000, HW Araujo was established and in July
+          2011, we became incorporated as Araujo Concrete Floor Inc. After 20
+          years experience, mostly in Ontario, we have grown and decided to
+          expand into preparing subfloor, and professional tile installation. We
+          feel that it is most beneficial to the customer having one company
+          providing complete services from start to finish.
+        </AboutUsDescription>
+
+        <AboutUsButton>REQUEST A QUOTE</AboutUsButton>
+      </AboutUs>
     </div>
   );
 }
