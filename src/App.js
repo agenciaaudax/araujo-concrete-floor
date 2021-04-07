@@ -4,6 +4,14 @@ import cover from "../src/assets/images/Mainsec.png";
 import brasao from "../src/assets/images/Icone.png";
 import telefone from "../src/assets/images/Tele.png";
 import Aboutimage from "../src/assets/images/AboutUs.png";
+import GallImage1 from "../src/assets/images/Gallery/Gallery.1.png";
+import GallImage2 from "../src/assets/images/Gallery/Gallery.2.png";
+import GallImage3 from "../src/assets/images/Gallery/Gallery.3.png";
+import GallImage4 from "../src/assets/images/Gallery/Gallery.4.png";
+import GallImage5 from "../src/assets/images/Gallery/Gallery.5.png";
+import GallImage6 from "../src/assets/images/Gallery/Gallery.6.png";
+import GallImage7 from "../src/assets/images/Gallery/Gallery.7.png";
+import GallImage8 from "../src/assets/images/Gallery/Gallery.8.png";
 
 const Header = styled.div`
   width: 1440px;
@@ -243,7 +251,7 @@ const MainSectionButton = styled.button`
 
 const AboutUs = styled.div`
   @media (max-width: 700px) {
-    width: 631px;
+    width: 375px;
     height: 532px;
     background-image: url(${Aboutimage});
     background-position: 50% 50%;
@@ -296,6 +304,131 @@ const AboutUsButton = styled.button`
     color: rgba(255, 255, 255, 1);
     margin: 0px 98px 78px 98px;
   }
+`;
+
+const Gallery = styled.div`
+  @media (max-width: 700px) {
+    width: 375px;
+    height: 2384px;
+    background: rgba(255, 255, 255, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+`;
+
+const GalleryTitle = styled.h6`
+  @media (max-width: 700px) {
+    width: 69px;
+    height: 24px;
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 120%;
+    text-transform: capitalize;
+    color: rgba(22, 29, 111, 1);
+  }
+`;
+
+const GalleryBoxImageHolder = styled.div`
+  @media (max-width: 700px) {
+    height: 200px;
+    width: 295px;
+    display: flex;
+    flex-direction: column;
+  }
+`;
+
+const GalleryBoxImage = styled.div`
+  @media (max-width: 700px) {
+    height: 83%;
+    width: 100%;
+    background-image: url(${GallImage1});
+  }
+`;
+
+const GalleryBoxImage1 = styled.div`
+  @media (max-width: 700px) {
+    height: 83%;
+    width: 100%;
+    background-image: url(${GallImage1});
+  }
+`;
+
+const GalleryBoxImage2 = styled.div`
+  @media (max-width: 700px) {
+    height: 83%;
+    width: 100%;
+    background-image: url(${GallImage2});
+  }
+`;
+
+const GalleryBoxImage3 = styled.div`
+  @media (max-width: 700px) {
+    height: 83%;
+    width: 100%;
+    background-image: url(${GallImage3});
+  }
+`;
+
+const GalleryBoxImage4 = styled.div`
+  @media (max-width: 700px) {
+    height: 83%;
+    width: 100%;
+    background-image: url(${GallImage4});
+  }
+`;
+
+const GalleryBoxImage5 = styled.div`
+  @media (max-width: 700px) {
+    height: 83%;
+    width: 100%;
+    background-image: url(${GallImage5});
+  }
+`;
+
+const GalleryBoxImage6 = styled.div`
+  @media (max-width: 700px) {
+    height: 83%;
+    width: 100%;
+    background-image: url(${GallImage6});
+  }
+`;
+
+const GalleryBoxImage7 = styled.div`
+  @media (max-width: 700px) {
+    height: 83%;
+    width: 100%;
+    background-image: url(${GallImage7});
+  }
+`;
+
+const GalleryBoxImage8 = styled.div`
+  @media (max-width: 700px) {
+    height: 83%;
+    width: 100%;
+    background-image: url(${GallImage8});
+  }
+`;
+
+const GalleryImageName = styled.div`
+  @media (max-width: 700px) {
+    width: 100%;
+    height: 20.48%;
+    background-color: rgba(3, 21, 31, 1);
+  }
+`;
+
+const GallImgDescription = styled.p`
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
 `;
 
 function App() {
@@ -355,6 +488,66 @@ function App() {
 
         <AboutUsButton>REQUEST A QUOTE</AboutUsButton>
       </AboutUs>
+      <Gallery>
+        <GalleryTitle>Gallery</GalleryTitle>
+        <GalleryBoxImageHolder>
+          <GalleryBoxImage1></GalleryBoxImage1>
+          <GalleryImageName>
+            <GallImgDescription>Shower Tile Installation</GallImgDescription>
+          </GalleryImageName>
+        </GalleryBoxImageHolder>
+
+        <GalleryBoxImageHolder>
+          <GalleryBoxImage2></GalleryBoxImage2>
+          <GalleryImageName>
+            <GallImgDescription>Fireplace</GallImgDescription>
+          </GalleryImageName>
+        </GalleryBoxImageHolder>
+
+        <GalleryBoxImageHolder>
+          <GalleryBoxImage3></GalleryBoxImage3>
+          <GalleryImageName>
+            <GallImgDescription>Washrooms</GallImgDescription>
+          </GalleryImageName>
+        </GalleryBoxImageHolder>
+
+        <GalleryBoxImageHolder>
+          <GalleryBoxImage4></GalleryBoxImage4>
+          <GalleryImageName>
+            <GallImgDescription>Backsplash</GallImgDescription>
+          </GalleryImageName>
+        </GalleryBoxImageHolder>
+
+        <GalleryBoxImageHolder>
+          <GalleryBoxImage5></GalleryBoxImage5>
+          <GalleryImageName>
+            <GallImgDescription>Tile jobs</GallImgDescription>
+          </GalleryImageName>
+        </GalleryBoxImageHolder>
+
+        <GalleryBoxImageHolder>
+          <GalleryBoxImage6></GalleryBoxImage6>
+          <GalleryImageName>
+            <GallImgDescription>Dry pack / Tile Cemente</GallImgDescription>
+          </GalleryImageName>
+        </GalleryBoxImageHolder>
+
+        <GalleryBoxImageHolder>
+          <GalleryBoxImage7></GalleryBoxImage7>
+          <GalleryImageName>
+            <GallImgDescription>The Pen Centre</GallImgDescription>
+          </GalleryImageName>
+        </GalleryBoxImageHolder>
+
+        <GalleryBoxImageHolder>
+          <GalleryBoxImage8></GalleryBoxImage8>
+          <GalleryImageName>
+            <GallImgDescription>
+              Feature Wall Tile Installation
+            </GallImgDescription>
+          </GalleryImageName>
+        </GalleryBoxImageHolder>
+      </Gallery>
     </div>
   );
 }
