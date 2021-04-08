@@ -431,6 +431,58 @@ const GallImgDescription = styled.p`
   text-align: center;
 `;
 
+const OtherPojects = styled.div`
+  @media (max-width: 700px) {
+    height: 1482px;
+    width: 375px;
+    margin-bottom: 60px;
+  }
+`;
+
+const OtherProjTitle = styled.h6`
+  @media (max-width: 700px) {
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 120%;
+    text-transform: capitalize;
+    color: rgba(22, 29, 111, 1);
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+  }
+`;
+
+const OtherPojectsHolder = styled.div`
+  @media (max-width: 700px) {
+    height: 95.28%;
+    width: 89.87%;
+    display: flex;
+    flex-direction: column;
+  }
+`;
+
+const OtherProjBoxTitle = styled.h6`
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 160%;
+  align-items: center;
+  color: rgba(22, 29, 111, 1);
+`;
+
+const OtherProjBoxParagraph = styled.p`
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 160%;
+  align-items: center;
+  color: rgba(72, 72, 72, 1);
+`;
+
 function App() {
   return (
     <div>
@@ -548,6 +600,102 @@ function App() {
           </GalleryImageName>
         </GalleryBoxImageHolder>
       </Gallery>
+
+      <OtherPojects>
+        <OtherProjTitle>Other Projects</OtherProjTitle>
+        <OtherPojectsHolder>
+          <OtherProjBoxTitle>Toronto</OtherProjBoxTitle>
+          <OtherProjBoxParagraph>
+            Nike Store at Yorkdale Mall
+          </OtherProjBoxParagraph>
+          <OtherProjBoxParagraph>
+            Apple Store at Yorkdale Mall
+          </OtherProjBoxParagraph>
+          <OtherProjBoxParagraph>Ripley Aquarium</OtherProjBoxParagraph>
+          <OtherProjBoxParagraph>
+            Louis Vuitton at Bay & Bloor
+          </OtherProjBoxParagraph>
+          <OtherProjBoxParagraph>
+            Bank of Montreal (MBO) at Yong & Dundas
+          </OtherProjBoxParagraph>
+          <OtherProjBoxParagraph>
+            CIBC Branch at Dundas & University
+          </OtherProjBoxParagraph>
+          <OtherProjBoxParagraph>Metro at Jane St & HW 7</OtherProjBoxParagraph>
+          <OtherProjBoxParagraph>
+            Metro at Yonge & Sheppard
+          </OtherProjBoxParagraph>
+          <OtherProjBoxParagraph>Several Medical Offices</OtherProjBoxParagraph>
+          <OtherProjBoxParagraph>
+            Several Starbucks Stores
+          </OtherProjBoxParagraph>
+          <OtherProjBoxParagraph>
+            Several McDonalds’s Stores
+          </OtherProjBoxParagraph>
+
+          <OtherProjBoxTitle>Kingston</OtherProjBoxTitle>
+          <OtherProjBoxParagraph>Royal Milk Canada</OtherProjBoxParagraph>
+
+          <OtherProjBoxTitle>GUELPH</OtherProjBoxTitle>
+          <OtherProjBoxParagraph>
+            Gay Lea Foods Co-operative Ltd.
+          </OtherProjBoxParagraph>
+          <OtherProjBoxParagraph>Nissan dealership</OtherProjBoxParagraph>
+
+          <OtherProjBoxTitle>HALIFAX</OtherProjBoxTitle>
+          <OtherProjBoxParagraph>Royal Milk Canada</OtherProjBoxParagraph>
+
+          <OtherProjBoxTitle>NIAGARA FALLS</OtherProjBoxTitle>
+          <OtherProjBoxParagraph>
+            Journey Behind the Falls
+          </OtherProjBoxParagraph>
+          <OtherProjBoxParagraph>
+            Table Rock House Restaurant
+          </OtherProjBoxParagraph>
+
+          <OtherProjBoxTitle>LONDON</OtherProjBoxTitle>
+          <OtherProjBoxParagraph>
+            OPP Southwestern Ontario Provincial
+          </OtherProjBoxParagraph>
+
+          <OtherProjBoxTitle>BRAMPTON</OtherProjBoxTitle>
+          <OtherProjBoxParagraph>City Hall</OtherProjBoxParagraph>
+
+          <OtherProjBoxTitle>HAMILTON</OtherProjBoxTitle>
+          <OtherProjBoxParagraph>Dofasco</OtherProjBoxParagraph>
+          <OtherProjBoxParagraph>Mondalez Canada</OtherProjBoxParagraph>
+          <OtherProjBoxParagraph>Mound Hamilton Cemetery</OtherProjBoxParagraph>
+
+          <OtherProjBoxTitle>MISSISSAUGA</OtherProjBoxTitle>
+          <OtherProjBoxParagraph>Dofasco</OtherProjBoxParagraph>
+          <OtherProjBoxParagraph>Mondalez Canada</OtherProjBoxParagraph>
+          <OtherProjBoxParagraph>Mound Hamilton Cemetery</OtherProjBoxParagraph>
+          <OtherProjBoxParagraph>
+            OPP Southwestern Ontario Provincial
+          </OtherProjBoxParagraph>
+          <OtherProjBoxParagraph>
+            Apple Store at Square One
+          </OtherProjBoxParagraph>
+          <OtherProjBoxParagraph>Canon Headquarters</OtherProjBoxParagraph>
+          <OtherProjBoxParagraph>
+            Several Stores at Pearson International Airport
+          </OtherProjBoxParagraph>
+          <OtherProjBoxParagraph>
+            Square One Shopping Centre
+          </OtherProjBoxParagraph>
+          <OtherProjBoxParagraph>Water Treatment Plant</OtherProjBoxParagraph>
+          <OtherProjBoxParagraph>
+            Terminal 1 Gate at Pearson International
+          </OtherProjBoxParagraph>
+          <OtherProjBoxParagraph>
+            Fire Station at Eglinton W & Hurontario
+          </OtherProjBoxParagraph>
+          <OtherProjBoxTitle>WATERLOO</OtherProjBoxTitle>
+          <OtherProjBoxParagraph>
+            Blackberry Technology Park
+          </OtherProjBoxParagraph>
+        </OtherPojectsHolder>
+      </OtherPojects>
     </div>
   );
 }
