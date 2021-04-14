@@ -12,6 +12,23 @@ import GallImage5 from "../src/assets/images/Gallery/Gallery.5.png";
 import GallImage6 from "../src/assets/images/Gallery/Gallery.6.png";
 import GallImage7 from "../src/assets/images/Gallery/Gallery.7.png";
 import GallImage8 from "../src/assets/images/Gallery/Gallery.8.png";
+import Col1image01 from "../src/assets/images/Partnership/Column1/Column1image1.png";
+import Col1image02 from "../src/assets/images/Partnership/Column1/Column1image2.png";
+import Col1image03 from "../src/assets/images/Partnership/Column1/Column1image3.png";
+import Col1image04 from "../src/assets/images/Partnership/Column1/Column1image4.png";
+import Col1image05 from "../src/assets/images/Partnership/Column1/Column1image5.png";
+import Col2image01 from "../src/assets/images/Partnership/Column2/Column2image1.png";
+import Col2image02 from "../src/assets/images/Partnership/Column2/Column2image2.png";
+import Col2image03 from "../src/assets/images/Partnership/Column2/Column2image3.png";
+import Col2image04 from "../src/assets/images/Partnership/Column2/Column2image4.png";
+import Col2image05 from "../src/assets/images/Partnership/Column2/Column2image5.png";
+import Col3image01 from "../src/assets/images/Partnership/Column3/Column3image1.png";
+import Col3image02 from "../src/assets/images/Partnership/Column3/Column3image2.png";
+import Col3image03 from "../src/assets/images/Partnership/Column3/Column3image3.png";
+import Col3image04 from "../src/assets/images/Partnership/Column3/Column3image4.png";
+import Col4image01 from "../src/assets/images/Partnership/Column4/Column4image1.png";
+import Col4image02 from "../src/assets/images/Partnership/Column4/Column4image2.png";
+import Col4image03 from "../src/assets/images/Partnership/Column4/Column4image3.png";
 
 const Header = styled.div`
   width: 1440px;
@@ -433,7 +450,7 @@ const GallImgDescription = styled.p`
 
 const OtherPojects = styled.div`
   @media (max-width: 700px) {
-    height: 1482px;
+    height: auto;
     width: 375px;
     margin-bottom: 60px;
   }
@@ -481,6 +498,265 @@ const OtherProjBoxParagraph = styled.p`
   line-height: 160%;
   align-items: center;
   color: rgba(72, 72, 72, 1);
+`;
+
+const Partnership = styled.div`
+  @media (max-width: 700px) {
+    height: 300px;
+    width: 374px;
+    background-color: rgba(255, 255, 255, 1);
+  }
+`;
+
+const PartnershipTitle = styled.h6`
+  @media (max-width: 700px) {
+    height: 24px;
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 120%;
+    text-transform: capitalize;
+    color: rgba(22, 29, 111, 1);
+    margin-bottom: 23px;
+    text-align: center;
+  }
+`;
+
+const PartnershipHolder = styled.div`
+  @media (max-width: 700px) {
+    display: flex;
+    width: 100%;
+    height: 74.33%;
+  }
+`;
+
+const PartnershipColumn1 = styled.div`
+  @media (max-width: 700px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    width: 29.68%;
+  }
+`;
+
+const Column1image1 = styled.div`
+  @media (max-width: 700px) {
+    height: 9.87%;
+    width: 60.36%;
+    background-image: url(${Col1image01});
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+`;
+
+const Column1image2 = styled.div`
+  @media (max-width: 700px) {
+    height: 7.62%;
+    width: 100%;
+    background-image: url(${Col1image02});
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+`;
+
+const Column1image3 = styled.div`
+  @media (max-width: 700px) {
+    height: 9.42%;
+    width: 63.96%;
+    background-image: url(${Col1image03});
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+`;
+
+const Column1image4 = styled.div`
+  @media (max-width: 700px) {
+    height: 12.11%;
+    width: 27.03%;
+    background-image: url(${Col1image04});
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+`;
+
+const Column1image5 = styled.div`
+  @media (max-width: 700px) {
+    height: 11.66%;
+    width: 46.85%;
+    background-image: url(${Col1image05});
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+`;
+
+const PartnershipColumn2 = styled.div`
+  @media (max-width: 700px) {
+    height: 100%;
+    width: 24.87%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+`;
+const Column2image1 = styled.div`
+  @media (max-width: 700px) {
+    height: 8.52%;
+    width: 86.02%;
+    background-image: url(${Col2image01});
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+`;
+
+const Column2image2 = styled.div`
+  @media (max-width: 700px) {
+    height: 8.52%;
+    width: 83.87%;
+    background-image: url(${Col2image02});
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+`;
+
+const Column2image3 = styled.div`
+  @media (max-width: 700px) {
+    height: 7.17%;
+    width: 96.77%;
+    background-image: url(${Col2image03});
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+`;
+
+const Column2image4 = styled.div`
+  @media (max-width: 700px) {
+    height: 13%;
+    width: 75.27%;
+    background-image: url(${Col2image04});
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+`;
+
+const Column2image5 = styled.div`
+  @media (max-width: 700px) {
+    height: 13.45%;
+    width: 68.82%;
+    background-image: url(${Col2image05});
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+`;
+
+const PartnershipColumn3 = styled.div`
+  @media (max-width: 700px) {
+    height: 100%;
+    width: 32.35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+`;
+
+const Column3image1 = styled.div`
+  @media (max-width: 700px) {
+    height: 17.49%;
+    width: 32.23%;
+    background-image: url(${Col3image01});
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+`;
+
+const Column3image2 = styled.div`
+  @media (max-width: 700px) {
+    height: 13.9%;
+    width: 31.4%;
+    background-image: url(${Col3image02});
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+`;
+
+const Column3image3 = styled.div`
+  @media (max-width: 700px) {
+    height: 13.45%;
+    width: 39.67%;
+    background-image: url(${Col3image03});
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+`;
+const Column3image4 = styled.div`
+  @media (max-width: 700px) {
+    height: 14.8%;
+    width: 49.59%;
+    background-image: url(${Col3image04});
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+`;
+
+const PartnershipColumn4 = styled.div`
+  @media (max-width: 700px) {
+    height: 100%;
+    width: 12.83%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+`;
+
+const Column4image1 = styled.div`
+  @media (max-width: 700px) {
+    height: 14.8%;
+    width: 68.75%;
+    background-image: url(${Col4image01});
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+`;
+const Column4image2 = styled.div`
+  @media (max-width: 700px) {
+    height: 14.35%;
+    width: 83.33%;
+    background-image: url(${Col4image02});
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+`;
+
+const Column4image3 = styled.div`
+  @media (max-width: 700px) {
+    height: 17.94%;
+    width: 100%;
+    background-image: url(${Col4image03});
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 `;
 
 function App() {
@@ -696,6 +972,36 @@ function App() {
           </OtherProjBoxParagraph>
         </OtherPojectsHolder>
       </OtherPojects>
+      <Partnership>
+        <PartnershipTitle>Our Partnerships</PartnershipTitle>
+        <PartnershipHolder>
+          <PartnershipColumn1>
+            <Column1image1></Column1image1>
+            <Column1image2></Column1image2>
+            <Column1image3></Column1image3>
+            <Column1image4></Column1image4>
+            <Column1image5></Column1image5>
+          </PartnershipColumn1>
+          <PartnershipColumn2>
+            <Column2image1></Column2image1>
+            <Column2image2></Column2image2>
+            <Column2image3></Column2image3>
+            <Column2image4></Column2image4>
+            <Column2image5></Column2image5>
+          </PartnershipColumn2>
+          <PartnershipColumn3>
+            <Column3image1></Column3image1>
+            <Column3image2></Column3image2>
+            <Column3image3></Column3image3>
+            <Column3image4></Column3image4>
+          </PartnershipColumn3>
+          <PartnershipColumn4>
+            <Column4image1></Column4image1>
+            <Column4image2></Column4image2>
+            <Column4image3></Column4image3>
+          </PartnershipColumn4>
+        </PartnershipHolder>
+      </Partnership>
     </div>
   );
 }
