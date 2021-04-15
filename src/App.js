@@ -508,6 +508,83 @@ const Partnership = styled.div`
   }
 `;
 
+const Reviews = styled.div`
+  @media (max-width: 700px) {
+    height: auto;
+    width: 375px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+`;
+
+const ReviewsTitle = styled.h6`
+  @media (max-width: 700px) {
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 120%;
+    text-transform: capitalize;
+    text-align: center;
+    color: rgba(7, 0, 77, 1);
+  }
+`;
+
+const ReviewsBox = styled.div`
+  @media (max-width: 700px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 270px;
+    height: auto;
+    background: rgba(7, 0, 77, 1);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    margin-bottom: 44px;
+  }
+`;
+
+const ReviewsBoxTitle = styled.h6`
+  @media (max-width: 700px) {
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    margin-bottom: 10px;
+  }
+`;
+
+const ReviewsBoxParagraph = styled.p`
+  @media (max-width: 700px) {
+    height: 154px;
+    width: 234px;
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 160%;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+  }
+`;
+
+const ReviewsSignature = styled.p`
+  @media (max-width: 700px) {
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    color: rgba(216, 213, 253, 1);
+  }
+`;
+
 const PartnershipTitle = styled.h6`
   @media (max-width: 700px) {
     height: 24px;
@@ -520,6 +597,7 @@ const PartnershipTitle = styled.h6`
     color: rgba(22, 29, 111, 1);
     margin-bottom: 23px;
     text-align: center;
+    margin-top: 60px;
   }
 `;
 
@@ -972,6 +1050,49 @@ function App() {
           </OtherProjBoxParagraph>
         </OtherPojectsHolder>
       </OtherPojects>
+      <Reviews>
+        <ReviewsTitle>Reviews</ReviewsTitle>
+        <ReviewsBox>
+          <ReviewsBoxTitle>Shower installation</ReviewsBoxTitle>
+          <ReviewsBoxParagraph>
+            Carla and the team did a fantastic job. They showed up on time and
+            did an excellent job with the install. I had four floors and a
+            shower to tile: their work was clean and efficient. I will be using
+            them again in
+          </ReviewsBoxParagraph>
+          <ReviewsSignature>Daniel</ReviewsSignature>
+        </ReviewsBox>
+
+        <ReviewsBox>
+          <ReviewsBoxTitle>Bathroom Renovation</ReviewsBoxTitle>
+          <ReviewsBoxParagraph>
+            Great service and workmanship, also leave worksite very clean. Very
+            professional and always on time. Highly recommend their services.
+          </ReviewsBoxParagraph>
+          <ReviewsSignature>Unknown</ReviewsSignature>
+        </ReviewsBox>
+
+        <ReviewsBox>
+          <ReviewsBoxTitle>Bathtub Resealing</ReviewsBoxTitle>
+          <ReviewsBoxParagraph>
+            Our bathtub needed the bottom row of tiles replaced and resealed.
+            Job was done quickly and efficiently. Very happy with the result and
+            will deal with them again in future.
+          </ReviewsBoxParagraph>
+          <ReviewsSignature>Natasha</ReviewsSignature>
+        </ReviewsBox>
+
+        <ReviewsBox>
+          <ReviewsBoxTitle>Fireplace Tiling</ReviewsBoxTitle>
+          <ReviewsBoxParagraph>
+            Amazing work done by Araujo and his team! They were efficient,
+            precise, answered all my questions, and of course did an amazing and
+            most professional job!
+          </ReviewsBoxParagraph>
+          <ReviewsSignature>Read all.</ReviewsSignature>
+          <ReviewsSignature>Stanley</ReviewsSignature>
+        </ReviewsBox>
+      </Reviews>
       <Partnership>
         <PartnershipTitle>Our Partnerships</PartnershipTitle>
         <PartnershipHolder>
