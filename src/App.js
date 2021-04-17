@@ -29,6 +29,10 @@ import Col3image04 from "../src/assets/images/Partnership/Column3/Column3image4.
 import Col4image01 from "../src/assets/images/Partnership/Column4/Column4image1.png";
 import Col4image02 from "../src/assets/images/Partnership/Column4/Column4image2.png";
 import Col4image03 from "../src/assets/images/Partnership/Column4/Column4image3.png";
+import FLogo from "../src/assets/images/Footer/AcLogo.png";
+import Social from "../src/assets/images/Footer/Insta.png";
+import Phone from "../src/assets/images/Footer/FooterPhone.png";
+import Icone from "../src/assets/images/Footer/Avatar.png";
 
 const Header = styled.div`
   width: 1440px;
@@ -837,6 +841,69 @@ const Column4image3 = styled.div`
   }
 `;
 
+const Footer = styled.div`
+  @media (max-width: 700px) {
+    height: auto;
+    width: 374px;
+    background-color: rgba(241, 240, 253, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+`;
+
+const FooterContainer = styled.div`
+  @media (max-width: 700px) {
+    height: auto;
+    width: 50.93%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+`;
+
+const FooterLogo = styled.img`
+  height: 160px;
+  width: 160px;
+`;
+
+const PhoneSymbol = styled.img`
+  height: 11.25px;
+  width: 11.25px;
+  color: rgba(1, 82, 148, 1); ;
+`;
+
+const FooterSubTitle = styled.h6`
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 150%;
+  color: rgba(3, 21, 31, 1);
+`;
+
+const FooterParagraph = styled.p`
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 150%;
+  color: rgba(1, 82, 148, 1);
+`;
+
+const ContactPhoneHold = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: 700px) {
+    margin-bottom: 17.49px;
+  }
+`;
+
 function App() {
   return (
     <div>
@@ -1123,6 +1190,41 @@ function App() {
           </PartnershipColumn4>
         </PartnershipHolder>
       </Partnership>
+      <Footer>
+        <FooterContainer>
+          <FooterLogo src={FLogo}></FooterLogo>
+          <FooterSubTitle>CONTACT</FooterSubTitle>
+          <FooterSubTitle>Carla Marçal</FooterSubTitle>
+          <ContactPhoneHold>
+            <PhoneSymbol src={Phone}></PhoneSymbol>
+            <FooterParagraph> (657) 668.5712</FooterParagraph>
+          </ContactPhoneHold>
+
+          <FooterSubTitle> Helivelton Araujo</FooterSubTitle>
+          <ContactPhoneHold>
+            <PhoneSymbol src={Phone}></PhoneSymbol>
+            <FooterParagraph> (416) 846.1763</FooterParagraph>
+          </ContactPhoneHold>
+
+          <ContactPhoneHold>
+            <PhoneSymbol src={Icone}></PhoneSymbol>
+            <FooterParagraph> araujoconcretefloor@hotmail.com</FooterParagraph>
+          </ContactPhoneHold>
+
+          <ContactPhoneHold>
+            <PhoneSymbol src={Social}></PhoneSymbol>
+            <FooterParagraph> @araujoconcretefloor</FooterParagraph>
+          </ContactPhoneHold>
+          <FooterSubTitle>PAGES</FooterSubTitle>
+          <FooterParagraph>Home</FooterParagraph>
+          <FooterParagraph>About Us</FooterParagraph>
+          <FooterParagraph>Services</FooterParagraph>
+          <FooterParagraph>Completed works</FooterParagraph>
+          <FooterParagraph>Others projects</FooterParagraph>
+          <FooterParagraph>Reviews</FooterParagraph>
+          <FooterParagraph>Our Partnerships</FooterParagraph>
+        </FooterContainer>
+      </Footer>
     </div>
   );
 }
