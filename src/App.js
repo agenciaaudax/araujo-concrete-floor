@@ -33,6 +33,9 @@ import FLogo from "../src/assets/images/Footer/AcLogo.png";
 import Social from "../src/assets/images/Footer/Insta.png";
 import Phone from "../src/assets/images/Footer/FooterPhone.png";
 import Icone from "../src/assets/images/Footer/Avatar.png";
+import Serv01 from "../src/assets/images/Services/Services1.png";
+import Serv02 from "../src/assets/images/Services/Services2.png";
+import Serv04 from "../src/assets/images/Services/Services4.png";
 
 const Header = styled.div`
   width: 1440px;
@@ -105,6 +108,7 @@ const MainSection = styled.div`
   background-image: url(${cover});
   background-position: 50% 50%;
   background-size: cover;
+  background-attachment: scroll;
   background-repeat: no-repeat;
 
   @media (max-width: 700px) {
@@ -112,7 +116,7 @@ const MainSection = styled.div`
     width: 375px;
     background-image: url(${cover});
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-size: cover;
   }
 `;
@@ -270,6 +274,88 @@ const MainSectionButton = styled.button`
   }
 `;
 
+const Services = styled.div`
+  @media (max-width: 700px) {
+    height: 1105px;
+    width: 375px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+`;
+
+const ServicesTitle = styled.h6`
+  @media (max-width: 700px) {
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 120%;
+    text-transform: capitalize;
+    color: rgba(7, 0, 77, 1);
+  }
+`;
+
+const ServiceBoxImageHolder = styled.div`
+  @media (max-width: 700px) {
+    height: 200px;
+    width: 295px;
+    display: flex;
+    flex-direction: column;
+  }
+`;
+
+const ServiceBoxImage1 = styled.div`
+  @media (max-width: 700px) {
+    height: 83%;
+    width: 100%;
+    background-image: url(${Serv01});
+  }
+`;
+
+const ServiceBoxImage2 = styled.div`
+  @media (max-width: 700px) {
+    height: 83%;
+    width: 100%;
+    background-image: url(${Serv02});
+  }
+`;
+
+const ServiceBoxImage3 = styled.div`
+  @media (max-width: 700px) {
+    height: 83%;
+    width: 100%;
+    background-image: url(${Serv02});
+  }
+`;
+
+const ServiceBoxImage4 = styled.div`
+  @media (max-width: 700px) {
+    height: 83%;
+    width: 100%;
+    background-image: url(${Serv04});
+  }
+`;
+
+const ServiceImageName = styled.div`
+  @media (max-width: 700px) {
+    width: 100%;
+    height: 20.48%;
+    background-color: rgba(3, 21, 31, 1);
+  }
+`;
+
+const ServImgDescription = styled.p`
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+`;
+
 const AboutUs = styled.div`
   @media (max-width: 700px) {
     width: 375px;
@@ -279,6 +365,7 @@ const AboutUs = styled.div`
     background-size: cover;
     background-repeat: no-repeat;
     padding-top: 86px;
+    margin-top: 60px;
   }
 `;
 
@@ -946,7 +1033,36 @@ function App() {
 
         <MainSectionButton>REQUEST A QUOTE</MainSectionButton>
       </MainSection>
+      <Services>
+        <ServicesTitle>Services</ServicesTitle>
 
+        <ServiceBoxImageHolder>
+          <ServiceBoxImage1></ServiceBoxImage1>
+          <ServiceImageName>
+            <ServImgDescription>Demolition</ServImgDescription>
+          </ServiceImageName>
+        </ServiceBoxImageHolder>
+
+        <ServiceBoxImageHolder>
+          <ServiceBoxImage2></ServiceBoxImage2>
+          <ServiceImageName>
+            <ServImgDescription>Floor levelling </ServImgDescription>
+          </ServiceImageName>
+        </ServiceBoxImageHolder>
+        <ServiceBoxImageHolder>
+          <ServiceBoxImage3></ServiceBoxImage3>
+          <ServiceImageName>
+            <ServImgDescription>Slopped Shower</ServImgDescription>
+          </ServiceImageName>
+        </ServiceBoxImageHolder>
+
+        <ServiceBoxImageHolder>
+          <ServiceBoxImage4></ServiceBoxImage4>
+          <ServiceImageName>
+            <ServImgDescription>Tile Installation</ServImgDescription>
+          </ServiceImageName>
+        </ServiceBoxImageHolder>
+      </Services>
       <AboutUs>
         <AboutUsTitle>About Us</AboutUsTitle>
         <AboutUsDescription>
